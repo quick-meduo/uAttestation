@@ -1,0 +1,11 @@
+application:
+  server: 
+    bind: 127.0.0.1:8086
+  debug: 
+    enable: true
+database: 
+  url: mysql://root:sinux123@localhost:3306/jfusion_schema
+
+etcd:
+  bind:
+    - http://127.0.0.1:2379

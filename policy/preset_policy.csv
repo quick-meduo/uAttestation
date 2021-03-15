@@ -1,0 +1,3 @@
+p, unauthority , public , /api/echo, POST
+p, unauthority , public , /api/:alive, GET
+g, anonymous,  unauthority, public
