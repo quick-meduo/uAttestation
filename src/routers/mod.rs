@@ -7,5 +7,6 @@ pub fn routes(config: &mut web::ServiceConfig) {
         web::scope("/api")
               .service(health::echo)
             .service(health::alive)
+            .service(token::create)
     );
 }

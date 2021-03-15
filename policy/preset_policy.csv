@@ -1,3 +1,4 @@
 p, unauthority , public , /api/echo, POST
 p, unauthority , public , /api/:alive, GET
+p, unauthority , public , /api/token/create, POST
 g, anonymous,  unauthority, public

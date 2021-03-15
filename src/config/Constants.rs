@@ -23,7 +23,7 @@ pub const MESSAGE_NEW_USER_ADD_PERMISSION_ERROR: &str =
 pub const MESSAGE_TOKEN_MISSING: &str = "Token is missing";
 
 // Headers
-pub const AUTHORIZATION: &str = "Authorization";
+pub const AUTHORIZATION: &str = "authorization";
 
 // Misc
 pub const EMPTY: &str = "";

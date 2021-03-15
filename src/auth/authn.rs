@@ -88,7 +88,7 @@ where
             if !authenticate_pass {
                 if let Some(authen_header) = req.headers().get(Constants::AUTHORIZATION) {
                     if let Ok(authen_str) = authen_header.to_str() {
-                        if authen_str.starts_with("bearer:") || authen_str.starts_with("Bearer:") {
+                        if authen_str.starts_with("bearer") || authen_str.starts_with("Bearer") {
                             let token = authen_str[7..authen_str.len()].trim();
                             if let Ok(token_data) = token_utils::decode_token(token.to_string()) {
                                 if token_utils::verify_token(&token_data).is_ok() {
